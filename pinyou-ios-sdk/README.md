@@ -15,7 +15,7 @@
 当用户首次启动应用时，向品友服务器发送用户信息，在appDelegate.m相应方法中添加代码如下
 
 ```
-[[PinyouSDK defaultManager] noticeConversionWithParamA:@"FJDSLfjs" conversionType:Download];
+[[PYConversion defaultManager] noticeConversionWithParamA:@"FJD.SLfjs" conversionType:PY_DownLoad];
 ```
 
 说明：
