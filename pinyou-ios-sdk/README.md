@@ -1,11 +1,56 @@
-###品友iOS统计SDK集成指南
+品友iOS SDK集成指南
+===
 
-#### 一.导入SDK
+----
+
+### 一.Pinyou 固定位广告iOS SDK集成指南
+
+#### 1. 获取广告位ID
+
+注册自己的App并获取广告位ID`adUnitId`
+
+#### 2. iOS SDK配置
+
+1. 在项目中添加libPinyou.a，*.h和Pinyou.bundle文件。
+2. 在Targets添加对libPinyou.a的依赖。
+3. 在Targets中添加以下Framework
+
+	* SystemConfiguration.framework
+	* ImageIO.framework
+	* CoreLocation.framework
+	* CoreTelephony.framework
+	* AdSupport.framework
+
+####3. 广告展示代码
+
+#####3.1 快速展示广告
+
+直接调用`Pinyou`的类方法
+
+`[Pinyou showDefaultTopBannerView];`
+	
+#####3.2 自定义展示广告
+
+需要自定义创建`PYBannerView`对象
+
+```
+	PYBannerView *bannerView = [[[PYBannerView alloc] initWithFrame:rect] autorelease];
+    bannerView.delegate = self;
+    [bannerView setAdUnitId:adUnitId];
+    [layerView addSubview:bannerView];
+    
+    [bannerView loadAdInfo];
+```
+----
+
+###二转化统计SDK集成指南
+
+#### 1.导入SDK
 
 - 下载pinyou-ios-sdk.zip并解压缩
 
 - 导入相关文件
-> 所需文件：`libPinyouSDK.a` 和 `PinyouSDK.h`。在工程目录结构中，右键选择`Add->Existing Files…`，选择这两个文件。或者将这两个文件拖入XCode工程目录结构中，在弹出的界面中勾选`Copy items into destination group's folder(if needed)`, 并确保`Add To Targets`勾选相应的target。
+> 所需文件：`libPinyou.a` 和 `PinyouSDK.h`。在工程目录结构中，右键选择`Add->Existing Files…`，选择这两个文件。或者将这两个文件拖入XCode工程目录结构中，在弹出的界面中勾选`Copy items into destination group's folder(if needed)`, 并确保`Add To Targets`勾选相应的target。
 
 - 配置
 >添加依赖框架(Framework)和编译器选项
