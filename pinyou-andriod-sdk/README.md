@@ -135,15 +135,15 @@ adView.loadAd();
 当用户首次打开应用程序时，向品友服务器发送用户信息，添加代码如下
 
 ```
-AdConversion pyConversion = AdConversionFactory.createAdConversion(getApplicationContext(), "FD.DFS", ConversionType.Download);
+AdConversion pyConversion = AdConversionFactory.createAdConversion(getApplicationContext(), "FD.DFS", ConversionType.Download,flag);
 pyConversion.noticeToPinyou();
 ```
 
 说明：
 
-1. 需要传入两个参数：`paramA`是由品友提供的关于广告主信息加密后的a参数，在下载SDK页面提供。`ConversionType`参数：转化目标` ConversionType{
+1. 需要传入三个参数：`paramA`是由品友提供的关于广告主信息加密后的a参数，在下载SDK页面提供。`ConversionType`参数：转化目标` ConversionType{
         Download,Pay,Register
-    }`
+    }`;`flag`表示品友传递的标识符
 2. 关于Advertising ID的获取，品友SDK中会对用户的设备判断是否安装了Google Play服务和满足版本要求，如果满足条件才去获取此设备的AdvertisingID,否则不执行相关代码获取。
 
 
