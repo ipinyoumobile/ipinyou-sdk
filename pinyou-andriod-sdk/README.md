@@ -99,7 +99,7 @@ adView.loadAd();
 </manifest>
 
 ```
-#### 2.支持Android IDFA
+#### 2.支持Android IDFA(可选)
 
 品友的sdk中支持传送Advertising ID数据，便于未来更准确的向用户投放广告。获取此ID需要满足以下条件
     
