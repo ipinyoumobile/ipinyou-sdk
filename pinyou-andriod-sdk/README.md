@@ -143,7 +143,7 @@ pyConversion.noticeToPinyou();
 
 1. 需要传入三个参数：`paramA`是由品友提供的关于广告主信息加密后的a参数，在下载SDK页面提供。`ConversionType`参数：转化目标` ConversionType{
         Download,Pay,Register
-    }`;`flag`表示品友传递的标识符
+    }`;`flag`表示品友传递的标识符,此参数为可选参数.
 2. 关于Advertising ID的获取，品友SDK中会对用户的设备判断是否安装了Google Play服务和满足版本要求，如果满足条件才去获取此设备的AdvertisingID,否则不执行相关代码获取。
 
 
