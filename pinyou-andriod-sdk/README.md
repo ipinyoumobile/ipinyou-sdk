@@ -47,6 +47,12 @@ adView.loadAd();
 		logToast(this,"You can buy the pro edition to hide the Ad!!");
 		return false;
 	}
+	/* 广告点击回调方法
+	 */
+	@Override
+	public void onAdClicked() {
+		logToast(this,"click Ad!!");
+	}
 ``` 
 
 #####4.3 释放资源
