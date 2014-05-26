@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F7003C32-45CB-4588-B62B-B926E90CA463</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AdLibDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CD419BB6-BA8A-4934-98CD-3053CF89893C</key>
+		<string>https://github.com/ipinyoumobile/ipinyou-sdk.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>pinyou-ios-sdk/AdLibDemo/AdLibDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CD419BB6-BA8A-4934-98CD-3053CF89893C</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ipinyoumobile/ipinyou-sdk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CD419BB6-BA8A-4934-98CD-3053CF89893C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD419BB6-BA8A-4934-98CD-3053CF89893C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ipinyou-sdk</string>
+		</dict>
+	</array>
+</dict>
+</plist>

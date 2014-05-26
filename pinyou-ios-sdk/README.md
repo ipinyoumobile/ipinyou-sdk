@@ -20,27 +20,44 @@
 	* CoreLocation.framework
 	* CoreTelephony.framework
 	* AdSupport.framework
+	* MobileCoreServices.frameword
 
 ####3. 广告展示代码
 
-#####3.1 快速展示广告
+
+####3.1 配置`AppDelegate.m`
+
+
+初始化SDK,添加代码如下:
+
+```
+	- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+ 	[PYAdRequest initSDKWithVersion:(NSString *)SDKVersion];
+}
+```
+#####3.2 快速展示广告
 
 直接调用`Pinyou`的类方法
 
 `[Pinyou showDefaultTopBannerView];`
 	
-#####3.2 自定义展示广告
+#####3.3 自定义展示广告
 
 需要自定义创建`PYBannerView`对象
 
 ```
-	PYBannerView *bannerView = [[[PYBannerView alloc] initWithFrame:rect] autorelease];
+    PYBannerView *bannerView = [[[PYBannerView alloc] initWithFrame:rect] autorelease];
     bannerView.delegate = self;
     [bannerView setAdUnitId:adUnitId];
     [layerView addSubview:bannerView];
     
     [bannerView loadAdInfo];
 ```
+更多自定义方法请参考`PYBannerViewDelegate.h`文件.
+
+**如果想自定义打开点击地址效果,需要通知品友,为相应广告位开通此功能**
+
 ----
 
 ###二转化统计SDK集成指南
