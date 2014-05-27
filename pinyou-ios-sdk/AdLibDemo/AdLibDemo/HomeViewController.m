@@ -25,10 +25,11 @@
 - (void)clickBannerButton:(id)sender
 {
 
-    PYBannerView *bannerView = [[[PYBannerView alloc] initWithFrame:CGRectMake(0, 20, 320, 50)] autorelease];
-    [bannerView setShowCloseButton:NO];
+    PYBannerView *bannerView = [[[PYBannerView alloc] initWithFrame:CGRectMake(0, 20, 320, 171)] autorelease];
+    [bannerView setShowCloseButton:YES];
+
     bannerView.delegate = self;
-    [bannerView setAdUnitId:@"gi.BY"];
+    [bannerView setAdUnitId:@"tn.RR"];
     [self.view addSubview:bannerView];
     
     [bannerView loadAdInfo];
@@ -37,7 +38,8 @@
 
 - (void)clickInterstitialButton:(id)sender
 {
-    [Pinyou showInterstitialViewWithSize:CGSizeMake(320, 240) adUnitId:@"Xi.VU"];
+//    [Pinyou showInterstitialViewWithSize:CGSizeMake(320, 240) adUnitId:@"Xi.VU"];
+    [Pinyou showBannerViewFormTopWithSize:CGSizeMake(320, 171) adUnitId:@"ln.fS"];
 
 }
 

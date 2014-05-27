@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0415626218D9435100F66631 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0415626118D9435100F66631 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		041F489E18CFF3B6006AF85F /* Pinyou.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 041F489D18CFF3B6006AF85F /* Pinyou.bundle */; };
 		042F1D5D18C5C3020000479F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1D5C18C5C3020000479F /* HomeViewController.m */; };
 		042F1D6018C5C7BE0000479F /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F1D5F18C5C7BE0000479F /* DownloadViewController.m */; };
 		0437BB3118B30754000BFE76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437BB3018B30754000BFE76 /* Foundation.framework */; };
@@ -26,12 +25,12 @@
 		04C3A1CD18EE4CAD007DD4C1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C3A1CC18EE4CAD007DD4C1 /* libsqlite3.0.dylib */; };
 		04C47B9D18FFBD3A00C1A16B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C47B9C18FFBD3A00C1A16B /* CFNetwork.framework */; };
 		04C47B9F18FFBD6100C1A16B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C47B9E18FFBD6100C1A16B /* MobileCoreServices.framework */; };
-		95D1B8EC1932F1B900DF0339 /* libPinyou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D1B8EB1932F1B900DF0339 /* libPinyou.a */; };
+		9541D0E7193441BF00E41453 /* Pinyou.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9541D0E6193441BF00E41453 /* Pinyou.bundle */; };
+		95C9EFEE19347BE300F76EDB /* libPinyou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C9EFED19347BE300F76EDB /* libPinyou.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0415626118D9435100F66631 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		041F489D18CFF3B6006AF85F /* Pinyou.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Pinyou.bundle; sourceTree = "<group>"; };
 		042F1D5B18C5C3020000479F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		042F1D5C18C5C3020000479F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		042F1D5E18C5C7BE0000479F /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
@@ -67,15 +66,14 @@
 		04C47B9C18FFBD3A00C1A16B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		04C47B9E18FFBD6100C1A16B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		04C8B00E18C80A6700B95F6D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9541D0E6193441BF00E41453 /* Pinyou.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Pinyou.bundle; sourceTree = "<group>"; };
+		95C9EFED19347BE300F76EDB /* libPinyou.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPinyou.a; sourceTree = "<group>"; };
 		95D1B8DD1932ED2900DF0339 /* Pinyou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pinyou.h; sourceTree = "<group>"; };
 		95D1B8DE1932ED2900DF0339 /* PYAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAdRequest.h; sourceTree = "<group>"; };
 		95D1B8DF1932ED2900DF0339 /* PYBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYBannerView.h; sourceTree = "<group>"; };
 		95D1B8E01932ED2900DF0339 /* PYBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYBannerViewDelegate.h; sourceTree = "<group>"; };
 		95D1B8E11932ED2900DF0339 /* PYInterstitialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYInterstitialView.h; sourceTree = "<group>"; };
 		95D1B8E21932ED2900DF0339 /* PYInterstitialViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYInterstitialViewDelegate.h; sourceTree = "<group>"; };
-		95D1B8E31932ED2900DF0339 /* PYMraidView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMraidView.h; sourceTree = "<group>"; };
-		95D1B8E41932ED2900DF0339 /* PYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYWebViewController.h; sourceTree = "<group>"; };
-		95D1B8EB1932F1B900DF0339 /* libPinyou.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPinyou.a; sourceTree = "<group>"; };
 		95D56430192F4E3A0022FBC6 /* libPinyou.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPinyou.a; path = "../../../../../Library/Developer/Xcode/DerivedData/AdLibDemo-eztzabmsrrnmhhhfuuaxegocnzdo/Build/Products/Release-iphoneos/libPinyou.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +90,7 @@
 				04BFFB9218C45518008F83A5 /* CoreTelephony.framework in Frameworks */,
 				04C1598218C083100067F94C /* CoreLocation.framework in Frameworks */,
 				0441E1A718BF388B0008025D /* ImageIO.framework in Frameworks */,
-				95D1B8EC1932F1B900DF0339 /* libPinyou.a in Frameworks */,
+				95C9EFEE19347BE300F76EDB /* libPinyou.a in Frameworks */,
 				04AA6F6218BF292D00AF0E95 /* SystemConfiguration.framework in Frameworks */,
 				0437BB3318B30754000BFE76 /* CoreGraphics.framework in Frameworks */,
 				0437BB3518B30754000BFE76 /* UIKit.framework in Frameworks */,
@@ -153,22 +151,20 @@
 		0437BB3618B30754000BFE76 /* AdLibDemo */ = {
 			isa = PBXGroup;
 			children = (
-				95D1B8EB1932F1B900DF0339 /* libPinyou.a */,
+				95C9EFED19347BE300F76EDB /* libPinyou.a */,
+				9541D0E6193441BF00E41453 /* Pinyou.bundle */,
 				95D1B8DD1932ED2900DF0339 /* Pinyou.h */,
 				95D1B8DE1932ED2900DF0339 /* PYAdRequest.h */,
 				95D1B8DF1932ED2900DF0339 /* PYBannerView.h */,
 				95D1B8E01932ED2900DF0339 /* PYBannerViewDelegate.h */,
 				95D1B8E11932ED2900DF0339 /* PYInterstitialView.h */,
 				95D1B8E21932ED2900DF0339 /* PYInterstitialViewDelegate.h */,
-				95D1B8E31932ED2900DF0339 /* PYMraidView.h */,
-				95D1B8E41932ED2900DF0339 /* PYWebViewController.h */,
 				0437BB3F18B30754000BFE76 /* AppDelegate.h */,
 				0437BB4018B30754000BFE76 /* AppDelegate.m */,
 				042F1D5B18C5C3020000479F /* HomeViewController.h */,
 				042F1D5C18C5C3020000479F /* HomeViewController.m */,
 				042F1D5E18C5C7BE0000479F /* DownloadViewController.h */,
 				042F1D5F18C5C7BE0000479F /* DownloadViewController.m */,
-				041F489D18CFF3B6006AF85F /* Pinyou.bundle */,
 				0437BB4218B30754000BFE76 /* Images.xcassets */,
 				0437BB3718B30754000BFE76 /* Supporting Files */,
 			);
@@ -261,7 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0437BB3B18B30754000BFE76 /* InfoPlist.strings in Resources */,
-				041F489E18CFF3B6006AF85F /* Pinyou.bundle in Resources */,
+				9541D0E7193441BF00E41453 /* Pinyou.bundle in Resources */,
 				0437BB4318B30754000BFE76 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +398,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AdLibDemo-eztzabmsrrnmhhhfuuaxegocnzdo/Build/Products/Release-iphoneos",
 					"/Users/darren/Develop/ipinyou-sdk/pinyou-ios-sdk/AdLibDemo",
 					"/Users/darren/Develop/ipinyou-sdk/pinyou-ios-sdk/AdLibDemo/AdLibDemo",
+					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -444,6 +441,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AdLibDemo-eztzabmsrrnmhhhfuuaxegocnzdo/Build/Products/Release-iphoneos",
 					"/Users/darren/Develop/ipinyou-sdk/pinyou-ios-sdk/AdLibDemo",
 					"/Users/darren/Develop/ipinyou-sdk/pinyou-ios-sdk/AdLibDemo/AdLibDemo",
+					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
