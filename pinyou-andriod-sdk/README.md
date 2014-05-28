@@ -11,7 +11,7 @@
 
 * 在项目的根目录新建libs文件夹(可选)。
 * 右键单击新建的libs文件夹,在弹出窗口中,选择Import -> General -> File System,完成操作 后,点击“Next”按钮,进入下一步。
-* 找到Pinyou_Android_SDK/libs文件夹路径,右侧选中芒果SDK (Pinyou_SDK_Android.jar),选中Create selected folders only
+* 找到Pinyou_Android_SDK/libs文件夹路径,右侧选中品友SDK (libPinyoud.jar),选中Create selected folders only
 * 选中libs文件夹中所有jar包,单击右键->Build Path->Add to Build Path
 
 
@@ -27,14 +27,14 @@
 #####4.1 在要展示广告的Activity的`OnCreate`方法放置以下代码
 
 ``` java
-adView = new AdView(this, "hA.3Y");//不需要设置广告位尺寸,会根据屏幕自适应
+adView = new AdView(this, "hA.3Y",new AdSize(w,h));
 //adView.noCloser = true;//显示关闭按钮
 LinearLayout layout = (LinearLayout) findViewById(R.id.linearLayout);
 layout.addView(adView,0);
 adView.loadAd();
 ```
 
-#####4.2 广告关闭按钮的回调方法
+#####4.2 广告展现的回调方法
   
 需要展示广告主的Activity实现AdsPinyouListener接口,并覆盖如下方法
 
@@ -52,6 +52,17 @@ adView.loadAd();
 	@Override
 	public void onAdClicked() {
 		logToast(this,"click Ad!!");
+	}
+	
+	/*
+	 *点击广告时自定义是通过浏览器打开或是通过app内部webview打开
+	 *注意:使用此项功能需要通知品友.在服务器商进行设置
+	 *return 如果为true为外部浏览器打开
+	 */
+	@Override
+	public boolean onAdOpenInBrowser(String url) {
+		logToast(this,url);
+		return true;
 	}
 ``` 
 
