@@ -67,7 +67,7 @@
 - 下载pinyou-ios-sdk.zip并解压缩
 
 - 导入相关文件
-> 所需文件：`libPinyou.a` 和 `PinyouSDK.h`。在工程目录结构中，右键选择`Add->Existing Files…`，选择这两个文件。或者将这两个文件拖入XCode工程目录结构中，在弹出的界面中勾选`Copy items into destination group's folder(if needed)`, 并确保`Add To Targets`勾选相应的target。
+> 所需文件：`libPinyouSDK.a` 和 `PYConversion.h`。在工程目录结构中，右键选择`Add->Existing Files…`，选择这两个文件。或者将这两个文件拖入XCode工程目录结构中，在弹出的界面中勾选`Copy items into destination group's folder(if needed)`, 并确保`Add To Targets`勾选相应的target。
 
 - 配置
 >添加依赖框架(Framework)和编译器选项

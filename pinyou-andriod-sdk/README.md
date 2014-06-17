@@ -20,7 +20,9 @@
 ``` xml
 <!-- 添加用户权限 --><!-- 连接网络权限INTERNET ,用于请求广告(必须) --><uses-permission android:name="android.permission.INTERNET" /><!-- 读取手机基本信息权限READ_PHONE_STATE,用于精确统计用户的机型等信息(必须)--><uses-permission android:name="android.permission.READ_PHONE_STATE" /><!-- 读取网络信息权限ACCESS_NETWORK_STATE,用于识别gprs网络的接入点的情况(必须) --><uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /><!-- 获取用户地理信息权限,用于帮助精确统计开发者的程序发布之后的用户分布情况 --><uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /><uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /><!--获得当前wifi的状态--> 
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /><!--拨打电话权限 --><uses-permission android:name="android.permission.CALL_PHONE" /> ```
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /><!--拨打电话权限 --><uses-permission android:name="android.permission.CALL_PHONE" /> 
+<!--向SD卡中写入缓存 -->
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />```
 
 ####4. 配置广告展示代码
 
@@ -64,6 +66,16 @@ adView.loadAd();
 		logToast(this,url);
 		return true;
 	}
+	
+	/*
+	 *广告加载失败时回调接口
+	 *return 
+	 *	 */
+	@Override
+	public boolean onAdShowFailed() {
+		Tools.d("ad load faild");
+		return false;
+	}
 ``` 
 
 #####4.3 释放资源
@@ -81,6 +93,19 @@ adView.loadAd();
   	}
 ```
 
+#####4.5开机广告支持
+``` java
+
+adView = new AdView(this, "tn.RR", new AdSize(320, 171));
+		
+	adView.noCloser = true;
+	adView.isBootScreen = true;
+	adView.setAdsPinyouListener(this);
+		
+	adView.loadAd();
+	Bitmap bitmap = adView.getBootScreenDrawable();
+	    
+```
 ----
 
 ### 二. 转化统计SDK集成流程
