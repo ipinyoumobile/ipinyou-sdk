@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "PYStartupView.h"
 @interface Pinyou : NSObject
 
 //固定位广告
@@ -25,7 +25,8 @@
 //Interstitial
 + (void)showInterstitialViewWithSize:(CGSize)size
                             adUnitId:(NSString *)adUnitId;
-
++ (void)showStartupViewWithSize:(CGSize)size
+                                  adUnitId:(NSString *)adUnitId;
 //Default
 
 + (void)showDefaultTopBannerView;

@@ -25,8 +25,8 @@
 		04C3A1CD18EE4CAD007DD4C1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C3A1CC18EE4CAD007DD4C1 /* libsqlite3.0.dylib */; };
 		04C47B9D18FFBD3A00C1A16B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C47B9C18FFBD3A00C1A16B /* CFNetwork.framework */; };
 		04C47B9F18FFBD6100C1A16B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C47B9E18FFBD6100C1A16B /* MobileCoreServices.framework */; };
-		9541D0E7193441BF00E41453 /* Pinyou.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9541D0E6193441BF00E41453 /* Pinyou.bundle */; };
-		95C9EFEE19347BE300F76EDB /* libPinyou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C9EFED19347BE300F76EDB /* libPinyou.a */; };
+		95475FB6193833DD0021ABBE /* Pinyou.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95475FAB193833DD0021ABBE /* Pinyou.bundle */; };
+		95475FB8193833ED0021ABBE /* libPinyou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95475FB7193833ED0021ABBE /* libPinyou.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,14 +66,18 @@
 		04C47B9C18FFBD3A00C1A16B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		04C47B9E18FFBD6100C1A16B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		04C8B00E18C80A6700B95F6D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		9541D0E6193441BF00E41453 /* Pinyou.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Pinyou.bundle; sourceTree = "<group>"; };
-		95C9EFED19347BE300F76EDB /* libPinyou.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPinyou.a; sourceTree = "<group>"; };
-		95D1B8DD1932ED2900DF0339 /* Pinyou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pinyou.h; sourceTree = "<group>"; };
-		95D1B8DE1932ED2900DF0339 /* PYAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAdRequest.h; sourceTree = "<group>"; };
-		95D1B8DF1932ED2900DF0339 /* PYBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYBannerView.h; sourceTree = "<group>"; };
-		95D1B8E01932ED2900DF0339 /* PYBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYBannerViewDelegate.h; sourceTree = "<group>"; };
-		95D1B8E11932ED2900DF0339 /* PYInterstitialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYInterstitialView.h; sourceTree = "<group>"; };
-		95D1B8E21932ED2900DF0339 /* PYInterstitialViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYInterstitialViewDelegate.h; sourceTree = "<group>"; };
+		95475FAB193833DD0021ABBE /* Pinyou.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Pinyou.bundle; sourceTree = "<group>"; };
+		95475FAC193833DD0021ABBE /* Pinyou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pinyou.h; sourceTree = "<group>"; };
+		95475FAD193833DD0021ABBE /* PYAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAdRequest.h; sourceTree = "<group>"; };
+		95475FAE193833DD0021ABBE /* PYBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYBannerView.h; sourceTree = "<group>"; };
+		95475FAF193833DD0021ABBE /* PYBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYBannerViewDelegate.h; sourceTree = "<group>"; };
+		95475FB0193833DD0021ABBE /* PYInterstitialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYInterstitialView.h; sourceTree = "<group>"; };
+		95475FB1193833DD0021ABBE /* PYInterstitialViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYInterstitialViewDelegate.h; sourceTree = "<group>"; };
+		95475FB2193833DD0021ABBE /* PYMraidView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMraidView.h; sourceTree = "<group>"; };
+		95475FB3193833DD0021ABBE /* PYStartupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYStartupView.h; sourceTree = "<group>"; };
+		95475FB4193833DD0021ABBE /* PYStartupViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYStartupViewDelegate.h; sourceTree = "<group>"; };
+		95475FB5193833DD0021ABBE /* PYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYWebViewController.h; sourceTree = "<group>"; };
+		95475FB7193833ED0021ABBE /* libPinyou.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPinyou.a; sourceTree = "<group>"; };
 		95D56430192F4E3A0022FBC6 /* libPinyou.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPinyou.a; path = "../../../../../Library/Developer/Xcode/DerivedData/AdLibDemo-eztzabmsrrnmhhhfuuaxegocnzdo/Build/Products/Release-iphoneos/libPinyou.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +94,7 @@
 				04BFFB9218C45518008F83A5 /* CoreTelephony.framework in Frameworks */,
 				04C1598218C083100067F94C /* CoreLocation.framework in Frameworks */,
 				0441E1A718BF388B0008025D /* ImageIO.framework in Frameworks */,
-				95C9EFEE19347BE300F76EDB /* libPinyou.a in Frameworks */,
+				95475FB8193833ED0021ABBE /* libPinyou.a in Frameworks */,
 				04AA6F6218BF292D00AF0E95 /* SystemConfiguration.framework in Frameworks */,
 				0437BB3318B30754000BFE76 /* CoreGraphics.framework in Frameworks */,
 				0437BB3518B30754000BFE76 /* UIKit.framework in Frameworks */,
@@ -151,14 +155,18 @@
 		0437BB3618B30754000BFE76 /* AdLibDemo */ = {
 			isa = PBXGroup;
 			children = (
-				95C9EFED19347BE300F76EDB /* libPinyou.a */,
-				9541D0E6193441BF00E41453 /* Pinyou.bundle */,
-				95D1B8DD1932ED2900DF0339 /* Pinyou.h */,
-				95D1B8DE1932ED2900DF0339 /* PYAdRequest.h */,
-				95D1B8DF1932ED2900DF0339 /* PYBannerView.h */,
-				95D1B8E01932ED2900DF0339 /* PYBannerViewDelegate.h */,
-				95D1B8E11932ED2900DF0339 /* PYInterstitialView.h */,
-				95D1B8E21932ED2900DF0339 /* PYInterstitialViewDelegate.h */,
+				95475FB7193833ED0021ABBE /* libPinyou.a */,
+				95475FAB193833DD0021ABBE /* Pinyou.bundle */,
+				95475FAC193833DD0021ABBE /* Pinyou.h */,
+				95475FAD193833DD0021ABBE /* PYAdRequest.h */,
+				95475FAE193833DD0021ABBE /* PYBannerView.h */,
+				95475FAF193833DD0021ABBE /* PYBannerViewDelegate.h */,
+				95475FB0193833DD0021ABBE /* PYInterstitialView.h */,
+				95475FB1193833DD0021ABBE /* PYInterstitialViewDelegate.h */,
+				95475FB2193833DD0021ABBE /* PYMraidView.h */,
+				95475FB3193833DD0021ABBE /* PYStartupView.h */,
+				95475FB4193833DD0021ABBE /* PYStartupViewDelegate.h */,
+				95475FB5193833DD0021ABBE /* PYWebViewController.h */,
 				0437BB3F18B30754000BFE76 /* AppDelegate.h */,
 				0437BB4018B30754000BFE76 /* AppDelegate.m */,
 				042F1D5B18C5C3020000479F /* HomeViewController.h */,
@@ -257,7 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0437BB3B18B30754000BFE76 /* InfoPlist.strings in Resources */,
-				9541D0E7193441BF00E41453 /* Pinyou.bundle in Resources */,
+				95475FB6193833DD0021ABBE /* Pinyou.bundle in Resources */,
 				0437BB4318B30754000BFE76 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
