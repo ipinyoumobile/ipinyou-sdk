@@ -93,7 +93,7 @@ adView.loadAd();
   	}
 ```
 
-#####4.5开机广告支持
+#####4.4 开机广告支持
 ``` java
 
 adView = new AdView(this, "tn.RR", new AdSize(320, 171));
