@@ -58,6 +58,18 @@
 
 **如果想自定义打开点击地址效果,需要通知品友,为相应广告位开通此功能**	
 
+#####3.4 App启动画面广告
+
+```
+PYStartupView *startupView = [[PYStartupView alloc]initWithSize:CGSizeMake(640, 960)] ;
+    startupView.delegate = self;
+    startupView.adUnitId = @"adUnitId";
+    [self.window addSubview:startupView];
+    [startupView loadAdInfo];
+```
+开屏广告位使用imageView属性返回图片物料：
+@property (retain,nonatomic) UIImageView *imageView;
+
 ----
 
 ###二转化统计SDK集成指南
