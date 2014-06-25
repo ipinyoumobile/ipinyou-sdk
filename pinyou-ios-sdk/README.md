@@ -67,7 +67,7 @@ PYStartupView *startupView = [[PYStartupView alloc]initWithSize:CGSizeMake(640, 
     [self.window addSubview:startupView];
     [startupView loadAdInfo];
 ```
-开屏广告位使用imageView属性返回图片物料：
+若需要直接使用image物料对象也可直接使用imageView属性：
 @property (retain,nonatomic) UIImageView *imageView;
 
 ----
