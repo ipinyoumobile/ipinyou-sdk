@@ -191,6 +191,7 @@ pyConversion.noticeToPinyou();
 ```
 PinyouPYSDK_V1.0(1289): send the convertion result to Pinyou SUCCESS!!
 ```
+
 4. 针对“Download”这个转化目标仅在第一次启动时会上报数据，之后app再启动是不会再上报数据的
 
 ###联系品友**如果您有任何问题或疑问,请及时联系品友移动组。我们将在第一时间做出回应。**** Email:mobile-core@ipinyou.com **
