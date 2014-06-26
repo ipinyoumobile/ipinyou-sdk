@@ -94,7 +94,9 @@ PYStartupView *startupView = [[PYStartupView alloc]initWithSize:CGSizeMake(640, 
 
 说明：
 
-1. 需要传入两个参数：`paramA`是由品友提供的关于广告主信息加密后的a参数，在下载SDK页面或者线下提供。`conversionType`为转化类型,当转化目标为下载 时,传入`Download`. 当品友接收到参数时，输出成功日志` Sending request to Pinyou Completed!!`,否则打印失败日志` Sending request to Pinyou has error!!`
+1. 需要传入两个参数：`paramA`是由品友提供的关于广告主信息加密后的a参数，在下载SDK页面或者线下提供。`conversionType`为转化类型,当转化目标为下载 时,传入`Download`. 
+2. 上报数据若成功，输出成功日志` Sending request to Pinyou Completed!!`,否则打印失败日志` Sending request to Pinyou has error!!`
+3. 针对“Download”这个转化目标仅在app第一次启动时会上报数据，之后app再启动是不会再上报数据的
 
 #### 二.技术支持
 
