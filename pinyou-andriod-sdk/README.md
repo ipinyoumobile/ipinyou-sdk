@@ -187,11 +187,10 @@ pyConversion.noticeToPinyou();
         Download,Pay,Register
     }`;`flag`表示品友传递的标识符,此参数为可选参数.
 2. 关于Advertising ID的获取，品友SDK中会对用户的设备判断是否安装了Google Play服务和满足版本要求，如果满足条件才去获取此设备的AdvertisingID,否则不执行相关代码获取。
-3. 确认上报成功：在logcat中‘debug’级能看到如下字样：
+3. 针对“Download”这个转化目标仅在第一次启动时会上报数据，之后app再启动是不会再上报数据的
+4. 确认上报成功：在logcat中‘debug’级能看到如下字样：
 ```
 PinyouPYSDK_V1.0(1289): send the convertion result to Pinyou SUCCESS!!
 ```
-
-4. 针对“Download”这个转化目标仅在第一次启动时会上报数据，之后app再启动是不会再上报数据的
 
 ###联系品友**如果您有任何问题或疑问,请及时联系品友移动组。我们将在第一时间做出回应。**** Email:mobile-core@ipinyou.com **
