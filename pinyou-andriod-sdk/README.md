@@ -9,10 +9,7 @@
 
 ####2. 导入Android SDK jar包
 
-* 在项目的根目录新建libs文件夹(可选)。
-* 右键单击新建的libs文件夹,在弹出窗口中,选择Import -> General -> File System,完成操作 后,点击“Next”按钮,进入下一步。
-* 找到Pinyou_Android_SDK/libs文件夹路径,右侧选中品友SDK (libPinyou.jar),选中Create selected folders only
-* 选中libs文件夹中所有jar包,单击右键->Build Path->Add to Build Path
+下载并导入libPinyou.jar
 
 
 ####3. 添加用户权限
