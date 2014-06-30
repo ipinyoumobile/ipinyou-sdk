@@ -11,7 +11,7 @@
 
 #### 2. iOS SDK配置
 
-1. 在项目中添加libPinyou.a，*.h和Pinyou.bundle文件。
+1. 在项目中添加libPinyou.a，<include>/*.h和Pinyou.bundle文件。
 2. 在Targets添加对libPinyou.a的依赖。
 3. 在Targets中添加以下Framework
 
@@ -76,7 +76,7 @@ PYStartupView *startupView = [[PYStartupView alloc]initWithSize:CGSizeMake(640, 
 
 #### 1.导入SDK
 
-- 下载pinyou-ios-sdk.zip并解压缩
+- 下载`libPinyouSDK.a` 和 `PYConversion.h`
 
 - 导入相关文件
 > 所需文件：`libPinyouSDK.a` 和 `PYConversion.h`。在工程目录结构中，右键选择`Add->Existing Files…`，选择这两个文件。或者将这两个文件拖入XCode工程目录结构中，在弹出的界面中勾选`Copy items into destination group's folder(if needed)`, 并确保`Add To Targets`勾选相应的target。
