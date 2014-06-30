@@ -1,8 +1,8 @@
-##Pinyou 固定位广告Android SDK集成指南
+##Pinyou Android SDK集成指南
 
 ----
 
-### 一.Android SDK集成流程
+### 一.Android 固定位广告 SDK集成流程
 
 ####1. 获取广告位ID
 注册自己的App并获取广告位ID`AdUnit`
@@ -11,7 +11,7 @@
 
 * 在项目的根目录新建libs文件夹(可选)。
 * 右键单击新建的libs文件夹,在弹出窗口中,选择Import -> General -> File System,完成操作 后,点击“Next”按钮,进入下一步。
-* 找到Pinyou_Android_SDK/libs文件夹路径,右侧选中品友SDK (libPinyoud.jar),选中Create selected folders only
+* 找到Pinyou_Android_SDK/libs文件夹路径,右侧选中品友SDK (libPinyou.jar),选中Create selected folders only
 * 选中libs文件夹中所有jar包,单击右键->Build Path->Add to Build Path
 
 
@@ -112,11 +112,11 @@ adView = new AdView(this, "tn.RR", new AdSize(320, 171));
 
 #### 1.导入SDK
 
-##### 1.1下载pinyou-android-sdk.zip并解压缩
+##### 1.1下载libPinyoud.jar
 
 ##### 1.2导入相关文件
 
- 下载最新版SDK的zip包，将其中的libs 文件夹合并到本地工程libs子目录下。
+ 下载最新版SDK的 libPinyoud.jar，导入到本地工程libs子目录下。
 
 ##### 1.3.配置
 >Eclipse用户右键工程根目录，选择Properties -> Java Build Path -> Libraries，然后点击Add External JARs... 选择指向jar的路径，点击OK，即导入成功。
@@ -188,9 +188,6 @@ pyConversion.noticeToPinyou();
     }`;`flag`表示品友传递的标识符,此参数为可选参数.
 2. 关于Advertising ID的获取，品友SDK中会对用户的设备判断是否安装了Google Play服务和满足版本要求，如果满足条件才去获取此设备的AdvertisingID,否则不执行相关代码获取。
 3. 针对“Download”这个转化目标仅在第一次启动时会上报数据，之后app再启动是不会再上报数据的
-4. 确认上报成功：在logcat中‘debug’级能看到如下字样：
-```
-PinyouPYSDK_V1.0(1289): send the convertion result to Pinyou SUCCESS!!
-```
+4. 确认上报成功：在logcat中‘debug’级能看到字样如：`PinyouPYSDK_V1.0(1289): send the convertion result to Pinyou SUCCESS!!`
 
 ###联系品友**如果您有任何问题或疑问,请及时联系品友移动组。我们将在第一时间做出回应。**** Email:mobile-core@ipinyou.com **
