@@ -11,7 +11,7 @@
 
 #### 2. iOS SDK配置
 
-1. 在项目中添加libPinyou.a，<include>/*.h和Pinyou.bundle文件。
+1. 在项目中添加libPinyou.a，include/*.h和Pinyou.bundle文件。
 2. 在Targets添加对libPinyou.a的依赖。
 3. 在Targets中添加以下Framework
 
