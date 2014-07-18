@@ -174,17 +174,15 @@ adView = new AdView(this, "tn.RR", new AdSize(320, 171));
 当用户首次打开应用程序时，向品友服务器发送用户信息，添加代码如下
 
 ```
-AdConversion pyConversion = AdConversionFactory.createAdConversion(getApplicationContext(), "FD.DFS", ConversionType.Download,flag);
+AdConversion pyConversion = AdConversionFactory.createAdConversion(getApplicationContext(), "a5.Yo", "1234");
 pyConversion.noticeToPinyou();
 ```
 
 说明：
 
-1. 需要传入三个参数：`paramA`是由品友提供的关于广告主信息加密后的a参数，在下载SDK页面提供。`ConversionType`参数：转化目标` ConversionType{
-        Download,Pay,Register
-    }`;`flag`表示品友传递的标识符,此参数为可选参数.
+1. `AdConversionFactory. createAdConversion(Context context,String paramA,String conversionType,String flag)`需要传入几个参数：其中`paramA`是由品友提供的关于广告主公司信息加密后的a参数。`ConversionType`参数：转化目标（在优驰系统中生成的转化目标ID）;`flag`表示品友传递的标识符,此参数为可选参数。(这些都可联系对口的业务人员获取)
 2. 关于Advertising ID的获取，品友SDK中会对用户的设备判断是否安装了Google Play服务和满足版本要求，如果满足条件才去获取此设备的AdvertisingID,否则不执行相关代码获取。
 3. 针对“Download”这个转化目标仅在第一次启动时会上报数据，之后app再启动是不会再上报数据的
-4. 确认上报成功：在logcat中‘debug’级能看到字样如：`PinyouPYSDK_V1.0 : send the convertion result to Pinyou SUCCESS!!`
+4. 确认上报成功：在logcat中‘debug’级能看到字样如：`PYSDK_V1.01 : send the convertion: , , , to Pinyou SUCCESS!!`
 
 ###联系品友**如果您有任何问题或疑问,请及时联系品友移动组。我们将在第一时间做出回应。**** Email:mobile-core@ipinyou.com **
