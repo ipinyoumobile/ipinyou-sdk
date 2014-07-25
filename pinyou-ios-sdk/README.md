@@ -89,14 +89,16 @@ PYStartupView *startupView = [[PYStartupView alloc]initWithSize:CGSizeMake(640, 
 当用户首次启动应用时，向品友服务器发送用户信息，在appDelegate.m相应方法中添加代码如下
 
 ```
-[[PYConversion defaultManager] noticeConversionWithParamA:@"FJD.SLfjs" conversionType:PY_DownLoad];
+[[PYConversion defaultManager] noticeConversionWithParamA:@"a5.Yo" conversionTypeString:@"1234"];
 ```
 
 说明：
 
-1. 需要传入两个参数：`paramA`是由品友提供的关于广告主信息加密后的a参数，在下载SDK页面或者线下提供。`conversionType`为转化类型,当转化目标为下载 时,传入`Download`. 
-2. 上报数据若成功，输出成功日志` Sending request to Pinyou Completed!!`,否则打印失败日志` Sending request to Pinyou has error!!`
-3. 针对“Download”这个转化目标仅在app第一次启动时会上报数据，之后app再启动是不会再上报数据的
+1.`(void)noticeConversionWithParamA:(NSString *)a conversionTypeString:(NSString *)type` 需要传入两个参数：`paramA`是由品友提供的关于广告主信息加密后的a参数，`ConversionType`参数：转化目标（在优驰系统中生成的转化目标ID）。(这些都可联系对口的业务人员获取). 
+
+2.上报数据若成功，输出成功日志` Sending request to Pinyou Completed!!`,否则打印失败日志` Sending request to Pinyou has error!!`
+
+3.针对“Download”这个转化目标仅在app第一次启动时会上报数据，之后app再启动是不会再上报数据的
 
 #### 二.技术支持
 

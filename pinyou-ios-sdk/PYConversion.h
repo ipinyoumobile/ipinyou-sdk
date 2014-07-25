@@ -23,6 +23,9 @@ typedef enum : NSInteger {
 //根据转化目标传递相应的转化类型ConversionType
 - (void)noticeConversionWithParamA:(NSString *)a conversionType:(ConversionType )type;
 
+//根据转化目标传递相应的转化点conversionType
+- (void)noticeConversionWithParamA:(NSString *)a conversionTypeString:(NSString *)type;
+
 
 @end
 
