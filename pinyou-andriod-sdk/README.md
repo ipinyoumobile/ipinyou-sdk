@@ -16,7 +16,6 @@
 
 ``` xml
 <!-- 添加用户权限 --><!-- 连接网络权限INTERNET ,用于请求广告(必须) --><uses-permission android:name="android.permission.INTERNET" /><!-- 读取手机基本信息权限READ_PHONE_STATE,用于精确统计用户的机型等信息(必须)--><uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
 <uses-permission android:name="android.permission.BLUETOOTH" /><!-- 读取网络信息权限ACCESS_NETWORK_STATE,用于识别gprs网络的接入点的情况(必须) --><uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /><!-- 获取用户地理信息权限,用于帮助精确统计开发者的程序发布之后的用户分布情况 --><uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /><uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /><!--获得当前wifi的状态--> 
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /><!--拨打电话权限 --><uses-permission android:name="android.permission.CALL_PHONE" /> 
