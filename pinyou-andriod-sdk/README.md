@@ -11,8 +11,8 @@
 
 下载并导入libPinyou.jar
 ``` java
-AdView.getVersion()：PYSDK_V1.1
-（若debug版本：PYSDK_V1.1debug）
+AdView.getVersion():"PYSDK_V1.1"
+(若debug版本:"PYSDK_V1.1debug")
 ```
 
 
@@ -118,10 +118,10 @@ adView = new AdView(this, "tn.RR", new AdSize(320, 171));
 
 ##### 1.2导入相关文件
 
- 下载最新版SDK的 libPinyoud.jar，导入到本地工程libs子目录下。
+ 下载最新版SDK的 libPinyou.jar，导入到本地工程libs子目录下。
 ``` java
-AdConversionFactory.getVersion()：PYSDK_V1.1
-（若debug版本：PYSDK_V1.1debug）
+AdConversionFactory.getVersion():"PYSDK_V1.1""
+(若debug版本:"PYSDK_V1.1debug")
 ```
 
 ##### 1.3.配置
