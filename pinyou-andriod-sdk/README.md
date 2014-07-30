@@ -10,6 +10,10 @@
 ####2. 导入Android SDK jar包
 
 下载并导入libPinyou.jar
+``` java
+AdView.getVersion()：PYSDK_V1.1
+（若debug版本：PYSDK_V1.1debug）
+```
 
 
 ####3. 添加用户权限
@@ -110,11 +114,15 @@ adView = new AdView(this, "tn.RR", new AdSize(320, 171));
 
 #### 1.导入SDK
 
-##### 1.1下载libPinyoud.jar
+##### 1.1下载libPinyou.jar
 
 ##### 1.2导入相关文件
 
  下载最新版SDK的 libPinyoud.jar，导入到本地工程libs子目录下。
+``` java
+AdConversionFactory.getVersion()：PYSDK_V1.1
+（若debug版本：PYSDK_V1.1debug）
+```
 
 ##### 1.3.配置
 >Eclipse用户右键工程根目录，选择Properties -> Java Build Path -> Libraries，然后点击Add External JARs... 选择指向jar的路径，点击OK，即导入成功。
