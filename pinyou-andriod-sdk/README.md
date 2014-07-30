@@ -120,7 +120,7 @@ adView = new AdView(this, "tn.RR", new AdSize(320, 171));
 
  下载最新版SDK的 libPinyou.jar，导入到本地工程libs子目录下。
 ``` java
-AdConversionFactory.getVersion():"PYSDK_V1.1""
+AdConversionFactory.getVersion():"PYSDK_V1.1"
 (若debug版本:"PYSDK_V1.1debug")
 ```
 
