@@ -94,7 +94,7 @@ PYStartupView *startupView = [[PYStartupView alloc]initWithSize:CGSizeMake(640, 
 
 说明：
 
-1.`(void)noticeConversionWithParamA:(NSString *)a conversionTypeString:(NSString *)type` 需要传入两个参数：`paramA`是由品友提供的关于广告主信息加密后的a参数，`ConversionType`参数：转化目标（在优驰系统中生成的转化目标ID）。(这些都可联系对口的业务人员获取). 
+1.`(void)noticeConversionWithParamA:(NSString *)a conversionTypeString:(NSString *)type` 需要传入两个参数：`paramA`是由品友提供的关于广告主注册公司信息加密后的a参数，`ConversionType`参数：转化目标（在优驰系统中生成的转化目标ID）。(这些都可联系对口的业务人员获取). 
 
 2.上报数据若成功，输出成功日志` Sending request to Pinyou Completed!!`,否则打印失败日志` Sending request to Pinyou has error!!`
 
