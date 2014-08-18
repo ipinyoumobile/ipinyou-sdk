@@ -110,12 +110,12 @@ _开启IDFA注意：在App提交AppStore审核时，对于IDFA的用途请按下
 _附：_
 
 _提交App审核时若未勾上“使用了IDFA”被拒的提示如下：
-‘Improper Advertising Identifier [IDFA] Usage. Your app contains the Advertising Identifier [IDFA] API but you have 
-not indicated its usage on the Prepare for Upload page in iTunes Connect.’_
+` Improper Advertising Identifier [IDFA] Usage. Your app contains the Advertising Identifier [IDFA] API but you have 
+not indicated its usage on the Prepare for Upload page in iTunes Connect.`_
 
 _提交App审核是若未勾上“Limit Ad Tracking setting in iOS”被拒的提示如下：
-‘Improper Advertising Identifier [IDFA] Usage. Your app contains the Advertising Identifier [IDFA] API but your 
-app is not respecting the Limit Ad Tracking setting in iOS.’_
+` Improper Advertising Identifier [IDFA] Usage. Your app contains the Advertising Identifier [IDFA] API but your 
+app is not respecting the Limit Ad Tracking setting in iOS.`_
 
 
 #### 二.技术支持
