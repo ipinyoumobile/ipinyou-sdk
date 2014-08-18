@@ -102,7 +102,7 @@ _开启IDFA注意：在App提交AppStore审核时，对于IDFA的用途请按下
 
 3.针对“Download”这个转化目标仅在app第一次启动时会上报数据，之后app再启动是不会再上报数据的
 
-_开启IDFA注意：在App提交AppStore审核时，对于IDFA的用途请按下图勾选，说明使用IDFA是为了作为广告主要跟踪广告效果的需要（若被拒，可按此理由进行申诉。）：
+_开启IDFA注意：在App提交AppStore审核时，对于IDFA的用途请按下图勾选，说明使用IDFA是为了作为广告主要跟踪广告效果的需要（若被拒，可按此理由作为广告主身份进行申诉。）：
 ![image](./img/idfa-c.png)
 若按上述操作后App审核仍被拒，可开启一个临时的Ad（无Ad不可使用IDFA）,审核通过后关闭该Ad（在AppStore的审核人员审核操作时能看到Ad即可），且可发送一个带有Ad的截图进行申诉。_
 ![image](./img/idfa-adc.png)
