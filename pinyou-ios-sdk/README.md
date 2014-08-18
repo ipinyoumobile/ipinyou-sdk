@@ -70,6 +70,8 @@ PYStartupView *startupView = [[PYStartupView alloc]initWithSize:CGSizeMake(640, 
 若需要直接使用image物料对象也可直接使用imageView属性：
 @property (retain,nonatomic) UIImageView *imageView;
 
+开启IDFA注意：在App提交AppStore审核时，对于IDFA的用途请按下图勾选，且在AppStore的审核人员审核操作时能看到Ad，否则App审核将被拒（无Ad不可使用IDFA）
+![image](./img/idfa-ad.png)
 ----
 
 ###二转化统计SDK集成指南
@@ -99,6 +101,22 @@ PYStartupView *startupView = [[PYStartupView alloc]initWithSize:CGSizeMake(640, 
 2.上报数据若成功，输出成功日志` Sending request to Pinyou Completed!!`,否则打印失败日志` Sending request to Pinyou has error!!`
 
 3.针对“Download”这个转化目标仅在app第一次启动时会上报数据，之后app再启动是不会再上报数据的
+
+开启IDFA注意：在App提交AppStore审核时，对于IDFA的用途请按下图勾选，说明使用IDFA是为了作为广告主要跟踪广告效果的需要（若被拒，可按此理由进行申诉。）：
+![image](./img/idfa-c.png)
+若按上述操作后App审核仍被拒，可开启一个临时的Ad（无Ad不可使用IDFA）,审核通过后关闭该Ad（在AppStore的审核人员审核操作时能看到Ad即可），且可发送一个带有Ad的截图进行申诉。
+![image](./img/idfa-adc.png)
+
+附：
+
+提交App审核时若未勾上“使用了IDFA”被拒的提示如下：
+‘Improper Advertising Identifier [IDFA] Usage. Your app contains the Advertising Identifier [IDFA] API but you have 
+not indicated its usage on the Prepare for Upload page in iTunes Connect.’
+
+提交App审核是若未勾上“Limit Ad Tracking setting in iOS”被拒的提示如下：
+‘Improper Advertising Identifier [IDFA] Usage. Your app contains the Advertising Identifier [IDFA] API but your 
+app is not respecting the Limit Ad Tracking setting in iOS.’
+
 
 #### 二.技术支持
 
