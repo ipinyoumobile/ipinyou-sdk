@@ -195,4 +195,21 @@ pyConversion.noticeToPinyou();
 3. 针对“Download”这个转化目标仅在第一次启动时会上报数据，之后app再启动是不会再上报数据的
 4. 确认上报成功：在logcat中‘debug’级能看到字样如：`PYSDK_V1.3 : send the convertion: , , , to Pinyou SUCCESS!!`
 
+
+_proguard防二次混淆注意事项：
+由于libPinyou.jar采用proguard混淆过，为了防止二次混淆，请按如下配置：
+proguard-project.txt  最后加上_
+
+```
+-libraryjars <libPinyou.jar Path> 
+-keep class com.ipinyou.sdk.ad.** {*; }
+-keep class org.OpenUDID.** {*; }
+```
+[说明: <libPinyou.jar Path>     :需配置能找到libPinyou.jar的路径     
+`
+-keep class com.ipinyou.sdk.**{*;}`    :包名 com.ipinyou.sdk 下的所有class 文件不参与混淆]
+
+`-keep class org.OpenUDID.**{*;}`    :包名 org.OpenUDID 下的所有class 文件不参与混淆]
+
+
 ###联系品友**如果您有任何问题或疑问,请及时联系品友移动组。我们将在第一时间做出回应。**** Email:mobile-core@ipinyou.com **
