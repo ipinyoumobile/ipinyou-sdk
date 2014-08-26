@@ -205,7 +205,7 @@ proguard-project.txt  最后加上_
 -keep class com.ipinyou.sdk.ad.** {*; }
 -keep class org.OpenUDID.** {*; }
 ```
-[说明: <libPinyou.jar Path>     :需配置能找到libPinyou.jar的路径     
+[说明: `<libPinyou.jar Path>`:需配置能找到libPinyou.jar的路径     
 `
 -keep class com.ipinyou.sdk.**{*;}`    :包名 com.ipinyou.sdk 下的所有class 文件不参与混淆]
 
