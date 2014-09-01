@@ -198,8 +198,11 @@ AdConversion pyConversion = AdConversionFactory.createAdConversion(getApplicatio
 pyConversion.setOrderNo("1");
 pyConversion.noticeToPinyou();
 ```
-4. 如何确认上报成功：在logcat中‘debug’级能看到字样如：`PYSDK_V1.4 : send the convertion: , , , to Pinyou SUCCESS!!`
-5. 针对“Download”这个转化目标仅在第一次启动时会上报数据，之后app再启动是不会再上报数据的
+
+4.如何确认上报成功：在logcat中‘debug’级能看到字样如：`PYSDK_V1.4 : send the convertion: , , , to Pinyou SUCCESS!!`
+
+5.针对“Download”这个转化目标仅在第一次启动时会上报数据，之后app再启动是不会再上报数据的
+
 
 
 _proguard防二次混淆注意事项：
