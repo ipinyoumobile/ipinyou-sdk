@@ -11,8 +11,8 @@
 
 下载并导入libPinyou.jar
 ``` java
-AdView.getVersion():"PYSDK_V1.3"
-(若debug版本:"PYSDK_V1.3debug")
+AdView.getVersion():"PYSDK_V1.4"
+(若debug版本:"PYSDK_V1.4debug")
 ```
 
 
@@ -120,8 +120,8 @@ adView = new AdView(this, "tn.RR", new AdSize(320, 171));
 
  下载最新版SDK的 libPinyou.jar，导入到本地工程libs子目录下。
 ``` java
-AdConversionFactory.getVersion():"PYSDK_V1.3"
-(若debug版本:"PYSDK_V1.3debug")
+AdConversionFactory.getVersion():"PYSDK_V1.4"
+(若debug版本:"PYSDK_V1.4debug")
 ```
 
 ##### 1.3.配置
@@ -198,7 +198,6 @@ AdConversion pyConversion = AdConversionFactory.createAdConversion(getApplicatio
 pyConversion.setOrderNo("1");
 pyConversion.noticeToPinyou();
 ```
-
 4. 如何确认上报成功：在logcat中‘debug’级能看到字样如：`PYSDK_V1.3 : send the convertion: , , , to Pinyou SUCCESS!!`
 5. 针对“Download”这个转化目标仅在第一次启动时会上报数据，之后app再启动是不会再上报数据的
 
