@@ -20,14 +20,14 @@ typedef enum : NSInteger {
 @interface PYConversion : NSObject
 + (PYConversion *)defaultManager;
 
-//根据转化目标传递相应的转化类型ConversionType
-- (void)noticeConversionWithParamA:(NSString *)a conversionType:(ConversionType )type;
-
 //根据转化目标传递相应的转化点conversionType
 - (void)noticeConversionWithParamA:(NSString *)a conversionTypeString:(NSString *)type;
 
 //根据转化目标传递相应的转化点conversionType和orderNo
 - (void)noticeConversionWithParamA:(NSString *)a conversionTypeString:(NSString *)type orderNo:(NSString *)orderNo;
+
+
+//- (void)noticeConversionWithParamA:(NSString *)a conversionType:(ConversionType )type;
 
 @end
 
