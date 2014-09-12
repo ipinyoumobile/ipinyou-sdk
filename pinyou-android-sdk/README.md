@@ -219,5 +219,6 @@ proguard-project.txt  最后加上_
 
 `-keep class org.OpenUDID.**{*;}`    :包名 org.OpenUDID 下的所有class 文件不参与混淆]
 
+> 注：android模拟器2.3版本存在“[Javascript to Java Bridge Throws Exception](https://code.google.com/p/android/issues/detail?id=12987)”的BUG，开发调试时请注意（并非SDK的问题）
 
 ###联系品友**如果您有任何问题或疑问,请及时联系品友移动组。我们将在第一时间做出回应。**** Email:mobile-core@ipinyou.com **
