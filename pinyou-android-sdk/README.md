@@ -204,11 +204,11 @@ pyConversion.noticeToPinyou();
 
 
 
-_proguard防二次混淆注意事项：
-由于libPinyou.jar采用proguard混淆过，为了防止二次混淆，请按如下配置：
+> ###proguard防二次混淆注意事项：
+_由于libPinyou.jar采用proguard混淆过，为了防止二次混淆，请按如下配置：
 proguard-project.txt  最后加上_
 
-```
+> ```
 -libraryjars <libPinyou.jar Path> 
 -keep class com.ipinyou.sdk.ad.** {*; }
 -keep class org.OpenUDID.** {*; }
@@ -217,8 +217,8 @@ proguard-project.txt  最后加上_
 `
 -keep class com.ipinyou.sdk.**{*;}`    :包名 com.ipinyou.sdk 下的所有class 文件不参与混淆]
 
-`-keep class org.OpenUDID.**{*;}`    :包名 org.OpenUDID 下的所有class 文件不参与混淆]
+> `-keep class org.OpenUDID.**{*;}`    :包名 org.OpenUDID 下的所有class 文件不参与混淆]
 
-> 注：android模拟器2.3版本存在“[Javascript to Java Bridge Throws Exception](https://code.google.com/p/android/issues/detail?id=12987)”的BUG，开发调试时请注意（并非SDK的问题）
+####注：android模拟器2.3版本存在“[Javascript to Java Bridge Throws Exception](https://code.google.com/p/android/issues/detail?id=12987)”的问题，在模拟器调试时可能存在闪退的情况（并非SDK的问题）
 
 ###联系品友**如果您有任何问题或疑问,请及时联系品友移动组。我们将在第一时间做出回应。**** Email:mobile-core@ipinyou.com **
